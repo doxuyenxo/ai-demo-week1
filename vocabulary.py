@@ -1,5 +1,18 @@
 from collections import defaultdict
 
+# tokenized_documents = [
+#     ["hello", "world"],
+#     ["hello", "machine", "learning"]
+# ]
+
+# =>  output
+# {
+#     "hello": 0,
+#     "world": 1,
+#     "machine": 2,
+#     "learning": 3
+# }
+
 def build_vocal(tokenized_documents):
     word_counts = defaultdict(int)
     for doc in tokenized_documents:

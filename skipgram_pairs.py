@@ -1,3 +1,12 @@
+# eg: "I love natural language processing"
+# window_size = 2, and center word is nature
+# related context will be: "I", "love", "language", "processing"
+# => 
+# ("natural", "I")
+# ("natural", "love")
+# ("natural", "language")
+# ("natural", "processing")
+
 def generate_skipgram_pairs(tokenized_docs, word2idx, window_size=2):
     pairs = []
     for doc in tokenized_docs:
